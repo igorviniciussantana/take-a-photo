@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWA - Camera</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="images/pwa-iicon-256.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Camera PWA" />
+   
+    <meta name="description" content="PWA que usa recursos de camera" />
+    <title>pwa - cam</title>
 </head>
 <body>
 
     <main id="camera">
 
-<canvas id="camera--sensor">
-</canvas>
+<canvas id="camera--sensor"></canvas>
 
 <video src="camera--view" autoplay playsinline></video>
-<img src="//:0" alt="" id="camera--output">
+<img src="//:0" alt="" id="camera--output" />
 
 <button id="camera--trigger">Tirar Foto</button>
 
