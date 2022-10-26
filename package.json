@@ -1,0 +1,14 @@
+{
+  "name": "cam-pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "serve": "serve ."
+  },
+  "author": "igor vinicius",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
