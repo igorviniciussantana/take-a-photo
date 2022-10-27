@@ -6,7 +6,7 @@
 #camera,
 #camera--view,
 #camera--sensor,
-#camera--output {
+#camera--output{
   position: fixed;
   height: 100%;
   width: 100%;
@@ -16,9 +16,18 @@
 #camera--sensor,
 #camera--output {
   transform: scaleX(-1);
-  filter: FlipH;
 }
-#camera--trigger {
+
+.buttons{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom: 10px;
+
+}
+#camera--trigger, #camera--change {
   width: 200px;
   background-color: black;
   color: white;
@@ -28,9 +37,9 @@
   padding: 15px 20px;
   text-align: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  position: fixed;
+  /* position: fixed;
   bottom: 30px;
-  left: calc(50% - 100px);
+  left: calc(50% - 100px); */
 }
 .taken {
   height: 100px !important;

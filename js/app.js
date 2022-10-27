@@ -1,9 +1,10 @@
-var constraints = { video: { facingMode: "environment" }, audio: false };
+var constraints = { video: { facingMode: "user" }, audio: false };
 
 const cameraView = document.querySelector('#camera--view'),
     cameraOutput = document.querySelector('#camera--output'),
     cameraSensor = document.querySelector('#camera--sensor'),
-    cameraTrigger = document.querySelector('#camera--trigger')
+    cameraTrigger = document.querySelector('#camera--trigger'),
+    cameraChange =  document.querySelector('#camera--change')
 
 function cameraStart() {
     navigator.mediaDevices
@@ -27,5 +28,15 @@ cameraTrigger.onclick = function () {
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
   };
+
+  cameraChange.onclick = function(){
+if(constraints.video.facingMode == "user"){
+    constraints.video.facingMode == "environment"
+}else if(constraints.video.facingMode == "environment"){
+    constraints.video.facingMode == "user"
+}
+
+cameraStart()
+  }
 
 window.addEventListener('load', cameraStart, false)

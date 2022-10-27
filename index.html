@@ -10,10 +10,9 @@
     <link rel="icon" href="images/pwa-iicon-256.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Camera PWA" />
-   
-    <meta name="description" content="PWA que usa recursos de camera" />
-    <title>pwa - cam</title>
+    <meta name="apple-mobile-web-app-title" content="Take a Photo" />
+    <meta name="description" content="Progressive Web App utilizando recursos da câmera" />
+    <title>Take a Photo</title>
 </head>
 <body>
 
@@ -24,8 +23,10 @@
 <video id="camera--view" src="camera--view" autoplay playsinline></video>
 <img src="//:0" alt="" id="camera--output" />
 
+<div class="buttons">
 <button id="camera--trigger">Tirar Foto</button>
-
+<button id="camera--change">Trocar</button>
+</div>
     </main>
     
     <script src="js/app.js"></script>
