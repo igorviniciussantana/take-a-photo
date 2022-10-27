@@ -32,11 +32,14 @@ cameraTrigger.onclick = function () {
   cameraChange.onclick = function(){
 if(constraints.video.facingMode == "user"){
     constraints.video.facingMode = "environment"
-    cameraView.style.cssText = 'transform: rotateY(180deg)'
-    cameraOutput.style.cssText = 'transform: rotateY(180deg)'
-    cameraSensor.style.cssText = 'transform: rotateY(180deg)'
+    cameraView.style.cssText = 'transform: scaleX(1)'
+    cameraOutput.style.cssText = 'transform: scaleX(1)'
+    cameraSensor.style.cssText = 'transform: scaleX(1)'
 }else if(constraints.video.facingMode == "environment"){
     constraints.video.facingMode = "user"
+    cameraView.style.cssText = 'transform: scaleX(-1)'
+    cameraOutput.style.cssText = 'transform: scaleX(-1)'
+    cameraSensor.style.cssText = 'transform: scaleX(-1)'
 }
 
 cameraStart()
