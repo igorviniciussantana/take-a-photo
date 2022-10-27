@@ -32,8 +32,8 @@ cameraTrigger.onclick = function () {
   cameraChange.onclick = function(){
 if(constraints.video.facingMode == "user"){
     constraints.video.facingMode = "environment"
-}else if(constraints.video.facingMode = "environment"){
-    constraints.video.facingMode == "user"
+}else if(constraints.video.facingMode == "environment"){
+    constraints.video.facingMode = "user"
 }
 
 cameraStart()
