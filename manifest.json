@@ -1,13 +1,13 @@
 {
-    "name": "Câmera PWA",
-    "short_name": "cam-pwa",
+    "name": "Take A Photo",
+    "short_name": "TAP",
     "icons": [
         {
-            "src": "images/icon-256.png",
+            "src": "images/icons/icon256.png",
             "sizes": "256x256"
         },
         {
-            "src": "images/icon-512.png",
+            "src": "images/icons/icon512.png",
             "sizes": "512x512"
         }
     ],

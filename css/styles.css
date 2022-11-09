@@ -1,12 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 #camera,
 #camera--view,
 #camera--sensor,
-#camera--output{
+#camera--output {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -18,16 +18,27 @@
   transform: scaleX(-1);
 }
 
-.buttons{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-position: fixed;
-bottom: 10px;
-
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
 }
-#camera--trigger, #camera--change {
+
+#camera--change {
+  width: 50px;
+  cursor:pointer;
+  transition: .5s;
+}
+
+#camera--change:active {
+ filter: brightness(80%);
+ transform: scale(0.9);
+}
+#camera--trigger {
   width: 200px;
   background-color: black;
   color: white;
@@ -37,9 +48,13 @@ bottom: 10px;
   padding: 15px 20px;
   text-align: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  /* position: fixed;
-  bottom: 30px;
-  left: calc(50% - 100px); */
+
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(16, 16, 17, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .taken {
   height: 100px !important;
